@@ -1,0 +1,36 @@
+<html>
+<head>
+ <title>Menyembunyikan dan menampilkan elemen dengan jQuery</title>
+ <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+ <script>
+
+ $(document).ready(function(){
+
+        $('.gambar').hide();        
+
+ 
+        $('.tampil').click(function(){
+   $('.gambar').show();
+        });
+
+
+        $('.sembunyi').click(function(){
+
+   $('.gambar').hide();        
+        });
+ });
+ </script>
+</head>
+<body>
+<input type="button" class="tampil" value="Tampilkan"/>
+<input type="button" class="sembunyi" value="Sembunyikan"/>
+ <div class="gambar">
+  <img src="pp.jpg"/> 
+ </div>
+<input type="button" class="tampil" value="Tampilkan"/>
+<input type="button" class="sembunyi" value="Sembunyikan"/>
+ <div class="gambar">
+ 	<img src="yy.jpg">
+ </div>
+</body>
+</html>
